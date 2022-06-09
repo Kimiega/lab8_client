@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersScenes.ElementWindowController">
+   <children>
+      <VBox prefHeight="680.0" prefWidth="462.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="idLabel" text="%label.id" />
+            <TextField fx:id="idField" editable="false" prefHeight="26.0" prefWidth="193.0" />
+            <Label fx:id="nameLabel" text="%label.name" />
+            <TextField fx:id="nameField" />
+            <HBox prefHeight="28.0" prefWidth="450.0" spacing="20.0">
+               <children>
+                  <Label text="%label.x" fx:id="xLabel" />
+                  <TextField fx:id="xField" />
+                  <Label fx:id="yLabel" text="%label.y" />
+                  <TextField fx:id="yField" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="creationDateLabel" text="%label.creationDate" />
+            <TextField fx:id="creationDateField" editable="false" />
+            <Label fx:id="areaLabel" text="%label.area" />
+            <TextField fx:id="areaField" />
+            <Label fx:id="populationLabel" text="%label.population" />
+            <TextField fx:id="populationField" />
+            <Label fx:id="metersAboveSeaLabel" text="%label.metersAboveSea" />
+            <TextField fx:id="metersAboveSeaField" />
+            <Label fx:id="timezoneLabel" text="%label.timezone" />
+            <TextField fx:id="timezoneField" />
+            <Label fx:id="agglomerationLabel" text="%label.agglomeration" />
+            <TextField fx:id="agglomerationField" />
+            <Label fx:id="climateLabel" text="%label.climate" />
+            <ChoiceBox fx:id="climateChoiceBox" prefWidth="150.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label fx:id="govLabel" text="%label.governor" />
+                  <CheckBox fx:id="isThereGovChecker" mnemonicParsing="false" text="%checkBox.isThereGov" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="govNameLabel" text="%label.govsName" />
+            <TextField fx:id="govNameField" />
+            <Label fx:id="govBirthLabel" text="%label.govsBirth" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <DatePicker fx:id="govBirthField">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="govAgeField" editable="false" prefHeight="26.0" prefWidth="61.0" />
+                  <Label fx:id="govAgeLabel" text="%label.ageGov" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="ownerLabel" text="%label.owner" />
+            <TextField fx:id="ownerField" editable="false" prefHeight="26.0" prefWidth="61.0" />
+         </children>
+      </VBox>
+      <Button fx:id="addButton" layoutX="498.0" layoutY="29.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" text="%button.addElement" />
+      <Button fx:id="editButton" disable="true" layoutX="498.0" layoutY="84.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" text="%button.editElement" />
+   </children>
+</AnchorPane>

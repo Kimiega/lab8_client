@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersScenes.LoginWindowController">
+   <children>
+      <Button fx:id="toLoginButton" layoutX="465.0" layoutY="67.0" mnemonicParsing="false" text="%button.toLogin" visible="false" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="toRegisterButton" layoutX="455.0" layoutY="57.0" mnemonicParsing="false" text="%button.toRegister" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+      <VBox fx:id="loginForm" alignment="TOP_CENTER" layoutX="206.0" layoutY="63.0" prefHeight="270.0" prefWidth="209.0" spacing="30.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label fx:id="loginFormLabel" alignment="CENTER" prefHeight="18.0" prefWidth="216.0" text="%label.loginForm" />
+            <TextField fx:id="loginFieldLF" prefHeight="26.0" prefWidth="186.0" promptText="%fieldPrompt.login" />
+            <PasswordField fx:id="passwordFieldLF" promptText="%fieldPrompt.password" />
+            <Button fx:id="loginButtonLF" mnemonicParsing="false" text="%button.login" />
+         </children>
+      </VBox>
+      <VBox fx:id="registerForm" alignment="TOP_CENTER" layoutX="206.0" layoutY="63.0" prefHeight="270.0" prefWidth="209.0" spacing="30.0" visible="false" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label fx:id="registerFormLabel" alignment="CENTER" prefHeight="18.0" prefWidth="217.0" text="%label.registerForm" />
+            <TextField fx:id="loginFieldRF" prefHeight="26.0" prefWidth="186.0" promptText="%fieldPrompt.login" />
+            <PasswordField fx:id="passwordField1RF" promptText="%fieldPrompt.password" />
+            <PasswordField fx:id="passwordField2RF" promptText="%fieldPrompt.passwordAgain" />
+            <Button fx:id="registerButtonRF" mnemonicParsing="false" text="%button.register" />
+         </children>
+      </VBox>
+      <VBox fx:id="userForm" alignment="TOP_CENTER" layoutX="216.0" layoutY="73.0" prefHeight="270.0" prefWidth="209.0" spacing="30.0" visible="false" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ava-round.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="usernameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="216.0" text="/username/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" text="%button.logout" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
